@@ -2,8 +2,10 @@
 
 /*
     Paleta de cores
-    Verde: #49a09d
-    Lilás: #5f2c82
+    Azul Profundo: #2C3E50
+    Azul Aciano: #3498DB
+    Cinza Claro: #ECF0F1
+    Branco: #FFFFFF
 */
 
 * {
@@ -14,7 +16,7 @@
 }
 
 body, html {
-    background-color: #5f2c82;
+    background-color: #2C3E50;
     height: 100vh;
     width: 100vw;
 }
@@ -44,7 +46,7 @@ section#login {
 
 section#login > div#imagem {
     display: block;
-    background: #5f2c82 url(../imagens/metal.jpg) no-repeat;
+    background: url(../imagens/metal.jpg) no-repeat;
     background-size: cover;
     background-position: left bottom;
     height: 200px;
@@ -65,8 +67,8 @@ div#formulario > p {
 }
 
 form > div.campo {
-    background-color: #5f2c82;
-    border: 2px solid #5f2c82;
+    background-color: #2C3E50;
+    border: 2px solid #2C3E50;
     display: block;
     width: 100%;
     height: 40px;
@@ -80,14 +82,13 @@ div.campo > label {
 
 div.campo > i {
     color: white;
-    /*background-color: black;*/
     font-size: 1.9em;
     width: 40px;
     padding: 5px;
 }
 
 div.campo > input {
-    background-color: #94cfcd;
+    background-color: #ECF0F1;
     font-size: 1em;
     width: calc(100% - 45px);
     height: 100%;
@@ -95,6 +96,7 @@ div.campo > input {
     border-radius: 8px;
     padding: 4px;
     transform: translateY(-10px);
+    color: #2C3E50;
 }
 
 div.campo > input:focus-within {
@@ -107,15 +109,16 @@ form > input[type=submit] {
     font-size: 1em;
     width: 100%;
     height: 40px;
-    background-color: #53aaa7;
+    background-color: #3498DB;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 form > input[type=submit]:hover {
-    background-color: #2d6462;
+    background-color: #2980B9;
 }
 
 form > a.botao {
@@ -127,14 +130,16 @@ form > a.botao {
     padding-top: 5px;
     margin-top: 5px;
     background-color: white;
-    color: #2d6462;
-    border: 1px solid #49a09d;
+    color: #2C3E50;
+    border: 2px solid #3498DB;
     border-radius: 7px;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 form > a.botao:hover {
-    background-color: #6cd3cf;
+    background-color: #3498DB;
+    color: white;
 }
 
 form > a.botao > i {
